@@ -10,4 +10,7 @@ artifacts:
   type: zip
   files:
     - NewLambdaEC2Start.yaml
+
+  type: zip
+  files:
     - NewLambdaEC2Stop.yaml
