@@ -2,9 +2,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file LambdaEC2StartStop.yaml --s3-bucket lonbergit-lambda 
-                                   --output-template-file NewLambdaEC2StartStop.yaml
+      - aws cloudformation package --template-file LambdaEC2Scheduler.yaml --s3-bucket lonbergit-lambda 
+                                   --output-template-file NewLambdaEC2Scheduler.yaml
 artifacts:
   type: zip
   files:
-    - NewLambdaEC2StartStop.yaml
+    - NewLambdaEC2Scheduler.yaml
